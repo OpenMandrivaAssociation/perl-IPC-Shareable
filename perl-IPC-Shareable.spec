@@ -10,6 +10,7 @@ License: 	Artistic
 Group:		Development/Perl
 Source0:	%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel 
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 Url:		http://www.capn.org
 Buildarch:	noarch
 
