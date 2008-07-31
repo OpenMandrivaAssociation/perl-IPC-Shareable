@@ -1,6 +1,6 @@
 %define module 	IPC-Shareable
 %define version 0.60
-%define release %mkrel 6
+%define release %mkrel 8
 
 Summary:	%{module} perl module
 Name: 		perl-%{module}
