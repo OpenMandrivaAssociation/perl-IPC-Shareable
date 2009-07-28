@@ -1,16 +1,18 @@
-%define module 	IPC-Shareable
+%define upstream_name 	 IPC-Shareable
+%define upstream_version 0.60
 
-Summary:	%{module} perl module
-Name: 		perl-%{module}
-Version: 	0.60
-Release: 	%mkrel 9
+Name: 		perl-%{upstream_name}
+Version: 	%perl_convert_version %{upstream_version}
+Release: 	%mkrel 1
+
+Summary:	%{upstream_name} perl module
 License: 	Artistic
 Group:		Development/Perl
-URL:		http://www.cpan.org
-Source0:	%{module}-%{version}.tar.bz2
-BuildRequires:	perl-devel 
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/IPC/%{upstream_name}-%{upstream_version}.tar.bz2
+
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 IPC-Shareable allows you to tie a variable to shared memory making it easy to
@@ -19,8 +21,7 @@ and hashes can be tied. The variable being tied may contain arbitrarily complex
 data structures including references to arrays, hashes of hashes, etc.
 
 %prep
-
-%setup -q  -n %{module}-%{version}
+%setup -q  -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -28,7 +29,6 @@ make
 
 %install
 rm -rf %{buildroot}
-
 %makeinstall_std
 
 %clean 
