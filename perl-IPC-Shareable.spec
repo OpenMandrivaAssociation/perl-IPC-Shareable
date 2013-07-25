@@ -1,15 +1,15 @@
 %define upstream_name 	 IPC-Shareable
-%define upstream_version 0.60
+%define upstream_version 0.61
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.61
+Release:	1
 
 Summary:	%{upstream_name} perl module
 License: 	Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/IPC/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/IPC/IPC-Shareable-0.61.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -66,4 +66,5 @@ make
 
 * Wed May 28 2003 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.60-4mdk
 - rebuild for new auto{prov,req}
+
 
