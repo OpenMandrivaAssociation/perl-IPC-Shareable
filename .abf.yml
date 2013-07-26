@@ -1,2 +1,4 @@
+removed_sources:
+  IPC-Shareable-0.60.tar.bz2: 8830b0eeca831410626e0a2f96025f9094a4280a
 sources:
-  "IPC-Shareable-0.60.tar.bz2": 8830b0eeca831410626e0a2f96025f9094a4280a
+  IPC-Shareable-0.61.tar.gz: e0271069d6ad0210947c0ea488d981a30300bcf8
