@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.61
-Release:	1
+Release:	2
 
 Summary:	%{upstream_name} perl module
 License: 	Artistic
