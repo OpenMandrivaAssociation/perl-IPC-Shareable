@@ -8,7 +8,7 @@ Release:	3
 Summary:	%{upstream_name} perl module
 License: 	Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/IPC/IPC-Shareable-0.61.tar.gz
 
 BuildRequires:	perl-devel
