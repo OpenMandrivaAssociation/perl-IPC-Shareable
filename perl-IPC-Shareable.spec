@@ -1,15 +1,15 @@
 %define upstream_name 	 IPC-Shareable
-%define upstream_version 0.61
+%define upstream_version 1.19
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.61
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	%{upstream_name} perl module
 License: 	Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/IPC/IPC-Shareable-0.61.tar.gz
+Url:		https://github.com/stevieb9/ipc-shareable
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVEB/IPC-Shareable-1.19.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
