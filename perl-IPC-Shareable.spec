@@ -1,9 +1,7 @@
 %define upstream_name 	 IPC-Shareable
-%define upstream_version 1.19
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.19
+Release:	2
 
 Summary:	%{upstream_name} perl module
 License: 	Artistic
@@ -22,7 +20,7 @@ and hashes can be tied. The variable being tied may contain arbitrarily complex
 data structures including references to arrays, hashes of hashes, etc.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -41,9 +39,7 @@ make
 %changelog
 * Tue Jul 28 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.600.0-1mdv2010.0
 + Revision: 402563
-- rebuild using %%perl_convert_version
-
-* Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.60-9mdv2009.0
+- rebuild using %1.19 Mon Sep 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.60-9mdv2009.0
 + Revision: 289647
 - disable tests for now
 
