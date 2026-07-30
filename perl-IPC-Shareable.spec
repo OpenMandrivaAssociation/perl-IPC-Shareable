@@ -2,7 +2,7 @@
 %define upstream_version 1.19
 Name:		perl-%{upstream_name}
 Version:	1.19
-Release:	1
+Release:	2
 
 Summary:	%{upstream_name} perl module
 License: 	Artistic
@@ -21,7 +21,7 @@ and hashes can be tied. The variable being tied may contain arbitrarily complex
 data structures including references to arrays, hashes of hashes, etc.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n IPC-Shareable-1.19
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
