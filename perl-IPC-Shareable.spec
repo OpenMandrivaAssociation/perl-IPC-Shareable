@@ -2,7 +2,7 @@
 %define upstream_version 1.19
 Name:		perl-%{upstream_name}
 Version:	1.19
-Release:	5
+Release:	6
 
 Summary:	%{upstream_name} perl module
 License: 	Artistic
@@ -27,13 +27,16 @@ data structures including references to arrays, hashes of hashes, etc.
 perl Makefile.PL INSTALLDIRS=vendor
 make 
 
+%check
+make test || :
+
 %install
 %makeinstall_std
 
 %files
-%doc README MANIFEST CHANGES CREDITS
-%{perl_vendorlib}/IPC/*.pm
-%{perl_vendorlib}/IPC/Shareable/*.pm
+%doc COPYING Changes META.yml
+%{perl_vendorlib}/IPC
+%{perl_vendorlib}/IPC/Shareable
 %{_mandir}/*/*
 
 
