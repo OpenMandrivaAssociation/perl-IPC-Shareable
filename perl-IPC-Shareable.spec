@@ -2,7 +2,7 @@
 %define upstream_version 1.19
 Name:		perl-%{upstream_name}
 Version:	1.19
-Release:	4
+Release:	5
 
 Summary:	%{upstream_name} perl module
 License: 	Artistic
@@ -31,7 +31,7 @@ make
 %makeinstall_std
 
 %files
-%doc README MANIFEST CHANGES CREDITS 
+%doc README MANIFEST CHANGES CREDITS
 %{perl_vendorlib}/IPC/*.pm
 %{perl_vendorlib}/IPC/Shareable/*.pm
 %{_mandir}/*/*
