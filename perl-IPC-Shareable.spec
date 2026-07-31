@@ -2,7 +2,7 @@
 %define upstream_version 1.19
 Name:		perl-%{upstream_name}
 Version:	1.19
-Release:	33
+Release:	34
 
 Summary:	%{upstream_name} perl module
 License: 	Artistic
