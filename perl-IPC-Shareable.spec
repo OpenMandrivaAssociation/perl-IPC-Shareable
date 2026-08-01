@@ -2,7 +2,7 @@
 %define upstream_version 1.19
 Name:		perl-%{upstream_name}
 Version:	1.19
-Release:	48
+Release:	49
 
 Summary:	%{upstream_name} perl module
 License: 	Artistic
@@ -12,8 +12,10 @@ Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVEB/IPC-Shareable-1.19.tar
 
 BuildRequires:	make
 BuildRequires:	perl-devel
-BuildArch:	noarch
-
+BuildRequires:	perl(IPC::Semaphore)
+BuildRequires:	perl(JSON)
+BuildRequires:	perl(String::CRC32)
+BuildRequires:	perl(Test::More)
 %description
 IPC-Shareable allows you to tie a variable to shared memory making it easy to
 share the contents of that variable with other Perl processes. Scalars, arrays,
@@ -35,8 +37,7 @@ make test || :
 
 %files
 %doc COPYING Changes META.yml
-%{perl_vendorlib}/IPC
-%{perl_vendorlib}/IPC/Shareable
-%{_mandir}/*/*
-
+%{perl_vendorarch}/IPC
+%{perl_vendorarch}/auto/IPC
+%{_mandir}/man3/*
 
